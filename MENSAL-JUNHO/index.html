@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trellis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="listaBoards"></div>
+    <div id="boardAberto" style="display: none;"></div>
+    
+    <!-- Modal para criar board -->
+    <div id="meuModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5);">
+      <div style="background:#fff; margin: 10% auto; padding: 20px; width:300px; position:relative;">
+        <span class="close" style="position:absolute; right:10px; top:5px; cursor:pointer;">&times;</span>
+        <div id="inputGroup">
+          <input id="nome" placeholder="Nome do board" /><br/>
+          <input id="descricao" placeholder="Descrição do board" /><br/>
+          <input id="hexadecimalColor" placeholder="Cor (ex: #ff0000)" /><br/>
+          <button id="buttonEnviar" onclick="criarBoard()">Criar Board</button>
+        </div>
+      </div>
+    </div>
+    
+    <button id="abrirModal">Novo Board</button>
+    
+    <script src="script.js"></script>
+</body>
+</html>
